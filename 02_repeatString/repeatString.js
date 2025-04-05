@@ -1,10 +1,12 @@
-const repeatString = function() {
-    - Take note of the above function call- how exactly is it being called?
 
-    - Create a variable to hold the string you're going to return, create a loop that repeats the given number of times and add the given string to the result on each loop.
-    
-    - If running `npm test repeatString.spec.js` returns results similar to the below, make sure you have enabled the rest of the tests, as described in the instructions above.
-
+const repeatString = function(string, num) {
+let result = "";
+  if (num < 0) return "ERROR";
+for (let i=0; i < num; i++){
+  result += string;
+}
+return result;
+repeatString('hey',3);
 };
 
 // Do not edit below this line
